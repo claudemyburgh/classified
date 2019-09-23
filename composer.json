@@ -1,0 +1,38 @@
+{
+    "name": "designbycode/classified",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Claude Myburgh",
+            "email": "claude@deisgnbycode.co.za"
+        }
+    ],
+    "require": {
+        "kalnoy/nestedset": "^5.0",
+        "laravel/socialite": "^4.2"
+    },
+    "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "DesignByCode\\Classified\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DesignByCode\\Classified\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+
+        },
+        "laravel": {
+            "providers": [
+                "DesignByCode\\Classified\\Providers\\ClassifiedServiceProvider"
+            ]
+        }
+    }
+}
